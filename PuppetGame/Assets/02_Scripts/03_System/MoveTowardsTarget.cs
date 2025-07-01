@@ -13,5 +13,4 @@ public class MoveTowardsTarget : MonoBehaviour
         Vector2 move = (target - current) * followSpeed;
         endAnchorRb.linearVelocity = move;
     }
-
 }

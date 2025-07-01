@@ -109,4 +109,5 @@ public class PlayerRunData : ScriptableObject
         runDecceleration = Mathf.Clamp(runDecceleration, 0.01f, runMaxSpeed);
         #endregion
     }
+
 }

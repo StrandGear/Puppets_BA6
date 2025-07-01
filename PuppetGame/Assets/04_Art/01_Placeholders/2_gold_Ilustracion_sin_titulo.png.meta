@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 1708801de5d7630468923b8d954da577
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8913970900437725639
+    second: 2_gold_Ilustracion_sin_titulo_0
+  - first:
+      213: -9145579631499471473
+    second: 2_gold_Ilustracion_sin_titulo_1
+  - first:
+      213: 8359984803085752445
+    second: 2_gold_Ilustracion_sin_titulo_2
+  - first:
+      213: -1137690557013056431
+    second: 2_gold_Ilustracion_sin_titulo_3
+  - first:
+      213: -1888264749928027359
+    second: 2_gold_Ilustracion_sin_titulo_4
+  - first:
+      213: -2006753755304139251
+    second: 2_gold_Ilustracion_sin_titulo_5
+  - first:
+      213: -1133175994351177516
+    second: 2_gold_Ilustracion_sin_titulo_6
+  - first:
+      213: -109452956281784028
+    second: 2_gold_Ilustracion_sin_titulo_7
+  - first:
+      213: -5567224715901856256
+    second: 2_gold_Ilustracion_sin_titulo_8
+  - first:
+      213: -1406127301977850966
+    second: 2_gold_Ilustracion_sin_titulo_9
+  - first:
+      213: 3012298133199535143
+    second: 2_gold_Ilustracion_sin_titulo_10
+  - first:
+      213: 5334685387591137841
+    second: 2_gold_Ilustracion_sin_titulo_11
+  - first:
+      213: 5968066692878749395
+    second: 2_gold_Ilustracion_sin_titulo_12
+  - first:
+      213: -7739678523056654450
+    second: 2_gold_Ilustracion_sin_titulo_13
+  - first:
+      213: 5221472680536229048
+    second: 2_gold_Ilustracion_sin_titulo_14
+  - first:
+      213: -2493001401793250336
+    second: 2_gold_Ilustracion_sin_titulo_15
+  - first:
+      213: -7026590957933280420
+    second: 2_gold_Ilustracion_sin_titulo_16
+  - first:
+      213: 5617593005633849408
+    second: 2_gold_Ilustracion_sin_titulo_17
+  - first:
+      213: 4795766128204984014
+    second: 2_gold_Ilustracion_sin_titulo_18
+  - first:
+      213: 5017129003750241417
+    second: 2_gold_Ilustracion_sin_titulo_19
+  - first:
+      213: 5779750081945155285
+    second: 2_gold_Ilustracion_sin_titulo_20
+  - first:
+      213: -6650454403722828687
+    second: 2_gold_Ilustracion_sin_titulo_21
+  - first:
+      213: -8570119045179186268
+    second: 2_gold_Ilustracion_sin_titulo_22
+  - first:
+      213: -6518730002573673107
+    second: 2_gold_Ilustracion_sin_titulo_23
+  - first:
+      213: 5372558310101262192
+    second: 2_gold_Ilustracion_sin_titulo_24
+  - first:
+      213: 7196940144834102939
+    second: 2_gold_Ilustracion_sin_titulo_25
+  - first:
+      213: -8738731598339887279
+    second: 2_gold_Ilustracion_sin_titulo_26
+  - first:
+      213: -1971480212557709715
+    second: 2_gold_Ilustracion_sin_titulo_27
+  - first:
+      213: 8744745455759722768
+    second: 2_gold_Ilustracion_sin_titulo_28
+  - first:
+      213: -1305820157983950043
+    second: 2_gold_Ilustracion_sin_titulo_29
+  - first:
+      213: -6643188678676763966
+    second: 2_gold_Ilustracion_sin_titulo_30
+  - first:
+      213: -2885930808276170648
+    second: 2_gold_Ilustracion_sin_titulo_31
+  - first:
+      213: -4258986513994833897
+    second: 2_gold_Ilustracion_sin_titulo_32
+  - first:
+      213: 8274180905643035166
+    second: 2_gold_Ilustracion_sin_titulo_33
+  - first:
+      213: 8961891770988552470
+    second: 2_gold_Ilustracion_sin_titulo_34
+  - first:
+      213: 7352631192871968521
+    second: 2_gold_Ilustracion_sin_titulo_35
+  - first:
+      213: 8128252188254162467
+    second: 2_gold_Ilustracion_sin_titulo_36
+  - first:
+      213: 1751621637600419278
+    second: 2_gold_Ilustracion_sin_titulo_37
+  - first:
+      213: -5401477126015450134
+    second: 2_gold_Ilustracion_sin_titulo_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1265
+        width: 149
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e8d3db1b63b4480800000000000000
+      internalID: -8913970900437725639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1321
+        width: 85
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f851d6fc7cf541180800000000000000
+      internalID: -9145579631499471473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_2
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1342
+        width: 17
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d781793a2e1a40470800000000000000
+      internalID: 8359984803085752445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_3
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1373
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154abe4577c1630f0800000000000000
+      internalID: -1137690557013056431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_4
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1394
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12be5a2e6398bc5e0800000000000000
+      internalID: -1888264749928027359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_5
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1233
+        width: 387
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d066a6f77149624e0800000000000000
+      internalID: -2006753755304139251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_6
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 1233
+        width: 387
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0b2bcdf662640f0800000000000000
+      internalID: -1133175994351177516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_7
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 1394
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429353dbd152b7ef0800000000000000
+      internalID: -109452956281784028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_8
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 1373
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00615e70e9e3db2b0800000000000000
+      internalID: -5567224715901856256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_9
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 1342
+        width: 17
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aabb1a83bae6c7ce0800000000000000
+      internalID: -1406127301977850966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_10
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 1321
+        width: 85
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c3eea3135ddc920800000000000000
+      internalID: 3012298133199535143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_11
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 1265
+        width: 149
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a36db781c980a40800000000000000
+      internalID: 5334685387591137841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1241
+        width: 96
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dec0e87905d2d250800000000000000
+      internalID: 5968066692878749395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1221
+        width: 69
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e87fc7dc363279490800000000000000
+      internalID: -7739678523056654450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_14
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1181
+        width: 552
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4c4c70db5667840800000000000000
+      internalID: 5221472680536229048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_15
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 1241
+        width: 96
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ebff8dfe64176dd0800000000000000
+      internalID: -2493001401793250336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_16
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 1221
+        width: 69
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c534a6290c88c7e90800000000000000
+      internalID: -7026590957933280420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 56
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04846894313b5fd40800000000000000
+      internalID: 5617593005633849408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1181
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece228172ebfd8240800000000000000
+      internalID: 4795766128204984014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_19
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 1200
+        width: 56
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 984b7dc3f3c60a540800000000000000
+      internalID: 5017129003750241417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_20
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 1181
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d630ecb31cc53050800000000000000
+      internalID: 5779750081945155285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1742b2794f6d4b3a0800000000000000
+      internalID: -6650454403722828687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 393
+        width: 56
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3e8458222d01980800000000000000
+      internalID: -8570119045179186268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_23
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 393
+        width: 56
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d3ae1b991d885a0800000000000000
+      internalID: -6518730002573673107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_24
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 420
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f98a861592f8a40800000000000000
+      internalID: 5372558310101262192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 376
+        width: 69
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96c5924eeaa0e360800000000000000
+      internalID: 7196940144834102939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 295
+        width: 96
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f287d39e9c9b680800000000000000
+      internalID: -8738731598339887279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_27
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 295
+        width: 96
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e39c82135e3a4e0800000000000000
+      internalID: -1971480212557709715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_28
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 376
+        width: 69
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01905cd09a39b5970800000000000000
+      internalID: 8744745455759722768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 149
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b72de1c7bc0ede0800000000000000
+      internalID: -1305820157983950043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_30
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 201
+        width: 85
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca23970817aec3a0800000000000000
+      internalID: -6643188678676763966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_31
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 201
+        width: 17
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 868c75e583d13f7d0800000000000000
+      internalID: -2885930808276170648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_32
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 201
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 710a822a45a05e4c0800000000000000
+      internalID: -4258986513994833897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_33
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 201
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a4c28f1bbc3d270800000000000000
+      internalID: 8274180905643035166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_34
+      rect:
+        serializedVersion: 2
+        x: 1915
+        y: 201
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611e44565190f5c70800000000000000
+      internalID: 8961891770988552470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_35
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 201
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f179f2d1bc90660800000000000000
+      internalID: 7352631192871968521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_36
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 201
+        width: 17
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e4ea5cc4a5dc070800000000000000
+      internalID: 8128252188254162467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_37
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 201
+        width: 85
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd9f0259920f4810800000000000000
+      internalID: 1751621637600419278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_gold_Ilustracion_sin_titulo_38
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 201
+        width: 149
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae383711c291a05b0800000000000000
+      internalID: -5401477126015450134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      2_gold_Ilustracion_sin_titulo_0: -8913970900437725639
+      2_gold_Ilustracion_sin_titulo_1: -9145579631499471473
+      2_gold_Ilustracion_sin_titulo_10: 3012298133199535143
+      2_gold_Ilustracion_sin_titulo_11: 5334685387591137841
+      2_gold_Ilustracion_sin_titulo_12: 5968066692878749395
+      2_gold_Ilustracion_sin_titulo_13: -7739678523056654450
+      2_gold_Ilustracion_sin_titulo_14: 5221472680536229048
+      2_gold_Ilustracion_sin_titulo_15: -2493001401793250336
+      2_gold_Ilustracion_sin_titulo_16: -7026590957933280420
+      2_gold_Ilustracion_sin_titulo_17: 5617593005633849408
+      2_gold_Ilustracion_sin_titulo_18: 4795766128204984014
+      2_gold_Ilustracion_sin_titulo_19: 5017129003750241417
+      2_gold_Ilustracion_sin_titulo_2: 8359984803085752445
+      2_gold_Ilustracion_sin_titulo_20: 5779750081945155285
+      2_gold_Ilustracion_sin_titulo_21: -6650454403722828687
+      2_gold_Ilustracion_sin_titulo_22: -8570119045179186268
+      2_gold_Ilustracion_sin_titulo_23: -6518730002573673107
+      2_gold_Ilustracion_sin_titulo_24: 5372558310101262192
+      2_gold_Ilustracion_sin_titulo_25: 7196940144834102939
+      2_gold_Ilustracion_sin_titulo_26: -8738731598339887279
+      2_gold_Ilustracion_sin_titulo_27: -1971480212557709715
+      2_gold_Ilustracion_sin_titulo_28: 8744745455759722768
+      2_gold_Ilustracion_sin_titulo_29: -1305820157983950043
+      2_gold_Ilustracion_sin_titulo_3: -1137690557013056431
+      2_gold_Ilustracion_sin_titulo_30: -6643188678676763966
+      2_gold_Ilustracion_sin_titulo_31: -2885930808276170648
+      2_gold_Ilustracion_sin_titulo_32: -4258986513994833897
+      2_gold_Ilustracion_sin_titulo_33: 8274180905643035166
+      2_gold_Ilustracion_sin_titulo_34: 8961891770988552470
+      2_gold_Ilustracion_sin_titulo_35: 7352631192871968521
+      2_gold_Ilustracion_sin_titulo_36: 8128252188254162467
+      2_gold_Ilustracion_sin_titulo_37: 1751621637600419278
+      2_gold_Ilustracion_sin_titulo_38: -5401477126015450134
+      2_gold_Ilustracion_sin_titulo_4: -1888264749928027359
+      2_gold_Ilustracion_sin_titulo_5: -2006753755304139251
+      2_gold_Ilustracion_sin_titulo_6: -1133175994351177516
+      2_gold_Ilustracion_sin_titulo_7: -109452956281784028
+      2_gold_Ilustracion_sin_titulo_8: -5567224715901856256
+      2_gold_Ilustracion_sin_titulo_9: -1406127301977850966
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

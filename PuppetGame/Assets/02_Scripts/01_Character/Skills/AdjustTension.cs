@@ -1,8 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(CharacterMovement))]
 [AddComponentMenu("Character/Abilities/AdjustTension")]
-public class AdjustTension : MonoBehaviour
+public class AdjustTension : Ability
 {
     [SerializeField] List<Transform> m_ropesAnchors = new List<Transform>();
     [SerializeField] float m_moveY = 5f;
@@ -12,11 +14,26 @@ public class AdjustTension : MonoBehaviour
     private Vector3[] m_targetPositions;
 
     private bool m_moving = false;
+    [Tooltip("Initial state of the rope, isUp = tight state.")]
     private bool m_isUp = true;
     private float m_lerpTime = 0f;
 
-    private void Start()
+    float m_initialMaxSpeed;
+
+    CharacterMovement m_movement;
+
+    [Range(0.01f, 1)] [SerializeField] float m_speedReduction = 0.3f;
+
+    protected override void Start()
     {
+        base.Start();
+
+        m_abilityButton.Enable();
+
+        m_abilityButton = InputSystem.actions.FindAction("Interact");
+        m_abilityButton.performed += UseAbility;
+        m_abilityButton.canceled += UseAbility;
+
         // starting positions
         m_startPositions = new Vector3[m_ropesAnchors.Count];
         for (int i = 0; i < m_ropesAnchors.Count; i++)
@@ -27,15 +44,16 @@ public class AdjustTension : MonoBehaviour
         // target is same as start
         m_targetPositions = new Vector3[m_ropesAnchors.Count];
         System.Array.Copy(m_startPositions, m_targetPositions, m_startPositions.Length);
+
+        m_movement = GetComponent<CharacterMovement>();
+        m_initialMaxSpeed = m_movement.Data.runMaxSpeed;
+
+        //initil state of the rope is tight so we adjust the speed in the beginning to slower 
+        ToggleCharacterMovement();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            ToggleMovement();
-        }
-
         if (m_moving)
         {
             m_lerpTime += Time.deltaTime * m_speed;
@@ -61,11 +79,21 @@ public class AdjustTension : MonoBehaviour
 
                 // Toggle state
                 m_isUp = !m_isUp;
+                // NOW update the character movement
+                ToggleCharacterMovement();
             }
         }
     }
 
-    private void ToggleMovement()
+    public override void UseAbility(InputAction.CallbackContext obj)
+    {
+        base.UseAbility(obj);
+
+        ToggleRopeMovement();
+
+    }
+
+    private void ToggleRopeMovement()
     {
         if (m_moving) return; // prevent mid-move toggle
 
@@ -80,5 +108,18 @@ public class AdjustTension : MonoBehaviour
 
         m_lerpTime = 0f;
         m_moving = true;
+    }
+
+    private void ToggleCharacterMovement()
+    {
+        if (m_isUp)
+        {
+            //high tension -> slower percise movement 
+            GetComponent<CharacterMovement>().Data.runMaxSpeed *= m_speedReduction;
+        }
+        else
+        {
+            GetComponent<CharacterMovement>().Data.runMaxSpeed = m_initialMaxSpeed;
+        }
     }
 }

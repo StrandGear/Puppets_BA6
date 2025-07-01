@@ -67,6 +67,32 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private LayerMask _groundLayer;
     #endregion
 
+    #region Copies from SO
+    // runtime copy (could be its own struct or separate variables)
+/*    [HideInInspector] public float runMaxSpeed;
+    [HideInInspector] public float runAccelAmount;
+    [HideInInspector] public float runDeccelAmount;
+    [HideInInspector] public float accelInAir;
+    [HideInInspector] public float deccelInAir;
+    [HideInInspector] public float jumpHangAccelerationMult;
+    [HideInInspector] public float jumpHangMaxSpeedMult;
+    [HideInInspector] public bool doConserveMomentum;
+    [HideInInspector] public float jumpHangTimeThreshold;*/
+    #endregion
+
+    #region Consts
+    // runtime copy (could be its own struct or separate variables)
+    float c_runMaxSpeed;
+    float c_runAccelAmount;
+    float c_runDeccelAmount;
+    float c_accelInAir;
+    float c_deccelInAir;
+    float c_jumpHangAccelerationMult;
+    float c_jumpHangMaxSpeedMult;
+    bool c_doConserveMomentum;
+    float c_jumpHangTimeThreshold;
+    #endregion
+
     private void OnEnable()
     {
         InputSystem.actions.FindActionMap("Player").Enable();
@@ -74,12 +100,15 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnDisable()
     {
+        ResetSOValuesToInit();
         InputSystem.actions.FindActionMap("Player").Disable();
     }
 
     private void Awake()
     {
         RB = GetComponent<Rigidbody2D>();
+
+        CopyFromSO();
     }
 
     private void Start()
@@ -97,6 +126,43 @@ public class CharacterMovement : MonoBehaviour
         SetGravityScale(Data.gravityScale);
 
         IsFacingRight = true;
+
+    }
+
+    public void CopyFromSO()
+    {/*
+        runMaxSpeed = Data.runMaxSpeed;
+        runAccelAmount = Data.runAccelAmount;
+        runDeccelAmount = Data.runDeccelAmount;
+        accelInAir = Data.accelInAir;
+        deccelInAir = Data.deccelInAir;
+        jumpHangAccelerationMult = Data.jumpHangAccelerationMult;
+        jumpHangMaxSpeedMult = Data.jumpHangMaxSpeedMult;
+        doConserveMomentum = Data.doConserveMomentum;
+        jumpHangTimeThreshold = Data.jumpHangTimeThreshold;*/
+
+        c_runMaxSpeed = Data.runMaxSpeed;
+        c_runAccelAmount = Data.runAccelAmount;
+        c_runDeccelAmount = Data.runDeccelAmount;
+        c_accelInAir = Data.accelInAir;
+        c_deccelInAir = Data.deccelInAir;
+        c_jumpHangAccelerationMult = Data.jumpHangAccelerationMult;
+        c_jumpHangMaxSpeedMult = Data.jumpHangMaxSpeedMult;
+        c_doConserveMomentum = Data.doConserveMomentum;
+        c_jumpHangTimeThreshold = Data.jumpHangTimeThreshold;
+    }
+
+    public void ResetSOValuesToInit()
+    {
+        Data.runMaxSpeed = c_runMaxSpeed;
+        Data.runAccelAmount = c_runAccelAmount;
+        Data.runDeccelAmount = c_runDeccelAmount;
+        Data.accelInAir = c_accelInAir;
+        Data.deccelInAir = c_deccelInAir;
+        Data.jumpHangAccelerationMult = c_jumpHangAccelerationMult;
+        Data.jumpHangMaxSpeedMult = c_jumpHangMaxSpeedMult;
+        Data.doConserveMomentum = c_doConserveMomentum;
+        Data.jumpHangTimeThreshold = c_jumpHangTimeThreshold;
     }
 
     #region INPUT CALLBACKS
