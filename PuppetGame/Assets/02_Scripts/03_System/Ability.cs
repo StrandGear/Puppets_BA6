@@ -21,6 +21,6 @@ public class Ability : MonoBehaviour
 
     public virtual void UseAbility(InputAction.CallbackContext obj)
     {
-        Debug.Log("Ability used.");
+        //Debug.Log("Ability used.");
     }
 }

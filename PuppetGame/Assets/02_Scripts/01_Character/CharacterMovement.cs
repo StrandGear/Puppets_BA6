@@ -13,6 +13,8 @@ public class CharacterMovement : MonoBehaviour
 
     #region COMPONENTS
     public Rigidbody2D RB { get; private set; }
+    Animator m_animator;
+
     //Script to handle all player animations, all references can be safely removed if you're importing into your own project.
     #endregion
 
@@ -20,6 +22,7 @@ public class CharacterMovement : MonoBehaviour
     //Variables control the various actions the player can perform at any time.
     //These are fields which can are public allowing for other sctipts to read them
     //but can only be privately written to.
+    [SerializeField] bool _isFacingRight = true;
     public bool IsFacingRight { get; private set; }
     public bool IsJumping { get; private set; }
     //public bool IsWallJumping { get; private set; }
@@ -107,6 +110,7 @@ public class CharacterMovement : MonoBehaviour
     private void Awake()
     {
         RB = GetComponent<Rigidbody2D>();
+        m_animator = GetComponent<Animator>();
 
         CopyFromSO();
     }
@@ -125,7 +129,7 @@ public class CharacterMovement : MonoBehaviour
         //Setting up defaults 
         SetGravityScale(Data.gravityScale);
 
-        IsFacingRight = true;
+        IsFacingRight = _isFacingRight;
 
     }
 
@@ -172,6 +176,7 @@ public class CharacterMovement : MonoBehaviour
 
         if (_currentMoveInput.x != 0)
             CheckDirectionToFace(_currentMoveInput.x > 0);
+
     }
     public void OnJumpUpInput(InputAction.CallbackContext ctx)
     {
@@ -341,6 +346,14 @@ public class CharacterMovement : MonoBehaviour
 
         float speedDif = targetSpeed - RB.linearVelocity.x;
         float movement = speedDif * accelRate;
+
+        if (m_animator != null)
+        {
+            float horizontalVelocity = Mathf.Abs(RB.linearVelocity.x);
+            bool isWalking = horizontalVelocity > 0.1f && LastOnGroundTime > 0;
+            m_animator.SetBool("IsWalking", isWalking);
+        }
+
         RB.AddForce(movement * Vector2.right, ForceMode2D.Force);
     }
 

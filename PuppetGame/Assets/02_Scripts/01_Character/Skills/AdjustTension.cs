@@ -24,6 +24,9 @@ public class AdjustTension : Ability
 
     [Range(0.01f, 1)] [SerializeField] float m_speedReduction = 0.3f;
 
+    float m_initMass;
+    [SerializeField] float m_biggerMass = 3.0f;
+
     protected override void Start()
     {
         base.Start();
@@ -47,6 +50,7 @@ public class AdjustTension : Ability
 
         m_movement = GetComponent<CharacterMovement>();
         m_initialMaxSpeed = m_movement.Data.runMaxSpeed;
+        m_initMass = GetComponent<Rigidbody2D>().mass;
 
         //initil state of the rope is tight so we adjust the speed in the beginning to slower 
         ToggleCharacterMovement();
@@ -114,12 +118,14 @@ public class AdjustTension : Ability
     {
         if (m_isUp)
         {
-            //high tension -> slower percise movement 
-            GetComponent<CharacterMovement>().Data.runMaxSpeed *= m_speedReduction;
+            //high tension -> slower percise movement -> 
+            //GetComponent<CharacterMovement>().Data.runMaxSpeed *= m_speedReduction;
+            GetComponent<Rigidbody2D>().mass = m_biggerMass;
         }
         else
         {
-            GetComponent<CharacterMovement>().Data.runMaxSpeed = m_initialMaxSpeed;
+            //GetComponent<CharacterMovement>().Data.runMaxSpeed = m_initialMaxSpeed;
+            GetComponent<Rigidbody2D>().mass = m_initMass;
         }
     }
 }
