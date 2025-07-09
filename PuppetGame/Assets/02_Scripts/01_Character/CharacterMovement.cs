@@ -451,7 +451,9 @@ public class CharacterMovement : MonoBehaviour
         if (RB.linearVelocity.y < 0)
             force -= RB.linearVelocity.y;
 
-        RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+        float adjustedForce = force * RB.mass;
+
+        RB.AddForce(Vector2.up * adjustedForce, ForceMode2D.Impulse);
         #endregion
     }
     #endregion

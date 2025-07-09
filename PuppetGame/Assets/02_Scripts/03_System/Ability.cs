@@ -6,6 +6,8 @@ public class Ability : MonoBehaviour
 {
     [HideInInspector] public InputAction m_abilityButton;
 
+    public CharacterType characterType { get; protected set; }
+
     protected virtual void Start()
     {
        /* m_abilityButton = InputSystem.actions.FindAction("Interact");

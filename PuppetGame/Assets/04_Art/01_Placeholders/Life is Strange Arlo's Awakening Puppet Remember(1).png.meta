@@ -1,0 +1,312 @@
+fileFormatVersion: 2
+guid: d04914a832c711e4ebd37f4115b0d0af
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3165453133956311475
+    second: Life is Strange Arlo's Awakening Puppet Remember(1)_0
+  - first:
+      213: 3720071675016153419
+    second: Life is Strange Arlo's Awakening Puppet Remember(1)_1
+  - first:
+      213: 1210734636931877613
+    second: Life is Strange Arlo's Awakening Puppet Remember(1)_2
+  - first:
+      213: -4096576890330242277
+    second: Life is Strange Arlo's Awakening Puppet Remember(1)_3
+  - first:
+      213: 2449400950033156154
+    second: Life is Strange Arlo's Awakening Puppet Remember(1)_4
+  - first:
+      213: 5078870844783732659
+    second: Life is Strange Arlo's Awakening Puppet Remember(1)_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Life is Strange Arlo's Awakening Puppet Remember(1)_0
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 850
+        width: 955
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9ec92aad2fdeb20800000000000000
+      internalID: 3165453133956311475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Life is Strange Arlo's Awakening Puppet Remember(1)_1
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 460
+        width: 996
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4984588a7950a330800000000000000
+      internalID: 3720071675016153419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Life is Strange Arlo's Awakening Puppet Remember(1)_2
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 605
+        width: 958
+        height: 222
+      alignment: 9
+      pivot: {x: 0.50455385, y: 0.63756084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea069fccb46dc010800000000000000
+      internalID: 1210734636931877613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Life is Strange Arlo's Awakening Puppet Remember(1)_3
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 246
+        width: 1021
+        height: 218
+      alignment: 9
+      pivot: {x: 0.50427294, y: 0.59005445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b13aac8d5090627c0800000000000000
+      internalID: -4096576890330242277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Life is Strange Arlo's Awakening Puppet Remember(1)_4
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 53
+        width: 531
+        height: 188
+      alignment: 9
+      pivot: {x: 0.039909348, y: 0.32595828}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a380b33cf250ef120800000000000000
+      internalID: 2449400950033156154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Life is Strange Arlo's Awakening Puppet Remember(1)_5
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 84
+        width: 488
+        height: 125
+      alignment: 9
+      pivot: {x: 0.9291127, y: 0.41274658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b72c63df16cb7640800000000000000
+      internalID: 5078870844783732659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9e9cf81971635f44ca53ded98855385c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Life is Strange Arlo's Awakening Puppet Remember(1)_0: 3165453133956311475
+      Life is Strange Arlo's Awakening Puppet Remember(1)_1: 3720071675016153419
+      Life is Strange Arlo's Awakening Puppet Remember(1)_2: 1210734636931877613
+      Life is Strange Arlo's Awakening Puppet Remember(1)_3: -4096576890330242277
+      Life is Strange Arlo's Awakening Puppet Remember(1)_4: 2449400950033156154
+      Life is Strange Arlo's Awakening Puppet Remember(1)_5: 5078870844783732659
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

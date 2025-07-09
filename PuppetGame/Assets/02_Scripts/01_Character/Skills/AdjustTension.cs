@@ -27,9 +27,13 @@ public class AdjustTension : Ability
     float m_initMass;
     [SerializeField] float m_biggerMass = 3.0f;
 
+    public StringPuppetStates currentAbilityState { get; private set; }
+
     protected override void Start()
     {
         base.Start();
+
+        characterType = CharacterType.StringPuppet;
 
         m_abilityButton.Enable();
 
@@ -121,11 +125,13 @@ public class AdjustTension : Ability
             //high tension -> slower percise movement -> 
             //GetComponent<CharacterMovement>().Data.runMaxSpeed *= m_speedReduction;
             GetComponent<Rigidbody2D>().mass = m_biggerMass;
+            currentAbilityState = StringPuppetStates.HighTension;
         }
         else
         {
             //GetComponent<CharacterMovement>().Data.runMaxSpeed = m_initialMaxSpeed;
             GetComponent<Rigidbody2D>().mass = m_initMass;
+            currentAbilityState = StringPuppetStates.LowTension;
         }
     }
 }
