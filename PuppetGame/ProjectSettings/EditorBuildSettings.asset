@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/01_Scenes/New Scene.unity
+    path: Assets/01_Scenes/FirstLevel.unity
     guid: 6ab338164d060684bb107ddafcdf678a
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: dc5571bf59c200d44994adfc800ccca8, type: 2}

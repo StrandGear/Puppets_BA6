@@ -2,7 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[AddComponentMenu("Caharacter/Movement")]
+[AddComponentMenu("Character/Movement")]
 [RequireComponent(typeof(Rigidbody2D))]
 //[RequireComponent(typeof(BoxCollider2D))]
 public class CharacterMovement : MonoBehaviour
