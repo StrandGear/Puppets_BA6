@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Ability : MonoBehaviour
+public abstract class Ability : MonoBehaviour
 {
     [HideInInspector] public InputAction m_abilityButton;
 

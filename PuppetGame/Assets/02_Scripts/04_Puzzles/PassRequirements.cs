@@ -5,6 +5,9 @@ public class PassRequirements : MonoBehaviour
 {
     [SerializeField] String_CharacterRequirment stringRequirements;
 
+    [Space(15)]
+    [Header("Callbacks eg. sounds, effects.")]
+    [Space(5)]
     public UnityEvent OnCannotPass;
     public UnityEvent OnCanPass;
 
@@ -28,6 +31,7 @@ public class PassRequirements : MonoBehaviour
             OnCanPass?.Invoke();
         else
             OnCannotPass?.Invoke();
+        Debug.Log($"Checking if character can pass: {result} for ability: {ability}");
 
         return result; // fallback: allow
     }

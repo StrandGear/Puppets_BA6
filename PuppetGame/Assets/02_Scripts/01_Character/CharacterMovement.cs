@@ -354,6 +354,8 @@ public class CharacterMovement : MonoBehaviour
             m_animator.SetBool("IsWalking", isWalking);
         }
 
+        //Debug.Log($"Current velocity Y: {RB.linearVelocity.y}, approx lift: {RB.mass * RB.linearVelocity.y}");
+
         RB.AddForce(movement * Vector2.right, ForceMode2D.Force);
     }
 
@@ -452,6 +454,8 @@ public class CharacterMovement : MonoBehaviour
             force -= RB.linearVelocity.y;
 
         float adjustedForce = force * RB.mass;
+
+        //Debug.Log($"Jump force applied: {adjustedForce} (raw: {force}, mass: {RB.mass})");
 
         RB.AddForce(Vector2.up * adjustedForce, ForceMode2D.Impulse);
         #endregion

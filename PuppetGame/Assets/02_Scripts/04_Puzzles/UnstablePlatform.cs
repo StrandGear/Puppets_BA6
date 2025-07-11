@@ -1,10 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-[RequireComponent(typeof(PassRequirements))]
-public class UnstablePlatform : MonoBehaviour
+public class UnstablePlatform : Puzzle
 {
-    PassRequirements m_PassRequirements;
 
     [Header("Animation Parameters")]
     [SerializeField] private float m_animLoopDuration = 0.5f;
@@ -17,9 +15,9 @@ public class UnstablePlatform : MonoBehaviour
 
     private Timer m_breakTimer;
 
-    private void Start()
+    protected override void Start()
     {
-        m_PassRequirements= gameObject.GetComponent<PassRequirements>();
+        base.Start();
         /*
                 // Tiny rotation around Z
                 LeanTween.rotateZ(gameObject, 0.8f, 0.4f)
@@ -43,48 +41,29 @@ public class UnstablePlatform : MonoBehaviour
         m_breakTimer?.Update();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    protected override void CharacterEnteredWithoutPassedRequirment()
     {
-        Ability currCharacterAbility = collision.gameObject.GetComponent<Ability>();
-        
-        if (currCharacterAbility)
+        if (m_breakTimer == null || !m_breakTimer.IsRunning)
         {
-            if (!m_PassRequirements.CanCharacterPass(currCharacterAbility))
-            {
-                //BreakPlatform();
+            m_breakTimer = new Timer(m_secondsBeforeBreaks, BreakPlatform);
+            m_breakTimer.Start();
 
-                if (m_breakTimer == null || !m_breakTimer.IsRunning)
-                {
-                    m_breakTimer = new Timer(m_secondsBeforeBreaks, BreakPlatform);
-                    m_breakTimer.Start();
-
-                    LeanTween.cancel(gameObject); // stop old tween
-
-                    LeanTween.moveLocalX(gameObject, transform.localPosition.x + 0.1f, 0.1f)
-                        .setEase(LeanTweenType.easeShake)
-                        .setLoopPingPong(-1);
-
-                }
-            }
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        Ability currCharacterAbility = collision.gameObject.GetComponent<Ability>();
-
-        if (currCharacterAbility)
-        {
-            // stop the timer so it doesn't break
-            m_breakTimer?.Stop();
-            m_breakTimer = null;
-
-            // return to gentle shake
             LeanTween.cancel(gameObject);
-            LeanTween.moveLocalX(gameObject, transform.localPosition.x + 0.02f, 0.5f)
+            LeanTween.moveLocalX(gameObject, transform.localPosition.x + 0.1f, 0.1f)
                 .setEase(LeanTweenType.easeShake)
                 .setLoopPingPong(-1);
         }
+    }
+
+    protected override void CharacterExited()
+    {
+        m_breakTimer?.Stop();
+        m_breakTimer = null;
+
+        LeanTween.cancel(gameObject);
+        LeanTween.moveLocalX(gameObject, transform.localPosition.x + 0.02f, 0.5f)
+            .setEase(LeanTweenType.easeShake)
+            .setLoopPingPong(-1);
     }
 
 
