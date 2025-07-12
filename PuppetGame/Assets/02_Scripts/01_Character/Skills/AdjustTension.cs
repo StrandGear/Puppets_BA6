@@ -124,12 +124,14 @@ public class AdjustTension : Ability
         {
             //high tension -> slower percise movement -> 
             //GetComponent<CharacterMovement>().Data.runMaxSpeed *= m_speedReduction;
+            //GetComponent<Rigidbody2D>().gravityScale = 5;
             GetComponent<Rigidbody2D>().mass = m_biggerMass;
             currentAbilityState = StringPuppetStates.HighTension;
         }
         else
         {
             //GetComponent<CharacterMovement>().Data.runMaxSpeed = m_initialMaxSpeed;
+            //GetComponent<Rigidbody2D>().gravityScale = 1;
             GetComponent<Rigidbody2D>().mass = m_initMass;
             currentAbilityState = StringPuppetStates.LowTension;
         }

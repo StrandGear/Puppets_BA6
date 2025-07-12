@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+[RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(PassRequirements))]
 public abstract class Puzzle : MonoBehaviour
 {
