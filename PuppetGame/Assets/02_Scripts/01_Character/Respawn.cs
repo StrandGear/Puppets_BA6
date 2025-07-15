@@ -8,17 +8,17 @@ public class Respawn : MonoBehaviour
 
     [SerializeField] Animator curtainAnimation;
 
-    private Timer respawnTimer;
+    //private Timer respawnTimer;
 
     private void Start()
     {
         lastCheckpointPos = transform.position; // fallback spawn
     }
-    private void Update()
+/*    private void Update()
     {
         if (respawnTimer != null)
             respawnTimer.Update();
-    }
+    }*/
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -40,13 +40,13 @@ public class Respawn : MonoBehaviour
     {
         curtainAnimation.SetTrigger("PlayCurtainAnim");
 
-        Time.timeScale = 0f;
+/*        Time.timeScale = 0f;
         respawnTimer = new Timer(0.3f, () =>
         {
             Time.timeScale = 1f;
             transform.position = lastCheckpointPos;
-        });
-
-        respawnTimer.Start();
+        });*/
+        transform.position = lastCheckpointPos;
+        //respawnTimer.Start();
     }
 }

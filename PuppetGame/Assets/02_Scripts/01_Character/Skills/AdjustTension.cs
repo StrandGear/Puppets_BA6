@@ -80,16 +80,16 @@ public class AdjustTension : Ability
             {
                 m_moving = false;
 
-                // Swap start and target so it goes the other way next time
-                var temp = m_startPositions;
-                m_startPositions = m_targetPositions;
-                m_targetPositions = temp;
+                for (int i = 0; i < m_ropesAnchors.Count; i++)
+                {
+                    m_startPositions[i] = m_ropesAnchors[i].position;
+                }
 
-                // Toggle state
                 m_isUp = !m_isUp;
-                // NOW update the character movement
+
                 ToggleCharacterMovement();
             }
+
         }
     }
 
@@ -109,10 +109,11 @@ public class AdjustTension : Ability
         // Set new target positions
         for (int i = 0; i < m_ropesAnchors.Count; i++)
         {
+            Vector3 pos = m_ropesAnchors[i].position;
             if (!m_isUp)
-                m_targetPositions[i] = m_startPositions[i] + new Vector3(0, m_moveY, 0);
+                m_targetPositions[i] = new Vector3(pos.x, m_startPositions[i].y + m_moveY, pos.z);
             else
-                m_targetPositions[i] = m_startPositions[i] - new Vector3(0, m_moveY, 0);
+                m_targetPositions[i] = new Vector3(pos.x, m_startPositions[i].y - m_moveY, pos.z);
         }
 
         m_lerpTime = 0f;
