@@ -99,6 +99,7 @@ public class AdjustTension : Ability
 
         ToggleRopeMovement();
 
+        GetComponent<CharacterAnimationController>().OnAbilitStateChanged.Invoke();
     }
 
     private void ToggleRopeMovement()

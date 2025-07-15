@@ -13,7 +13,8 @@ public class CharacterMovement : MonoBehaviour
 
     #region COMPONENTS
     public Rigidbody2D RB { get; private set; }
-    Animator m_animator;
+    //Animator m_animator;
+    CharacterAnimationController _animController;
 
     //Script to handle all player animations, all references can be safely removed if you're importing into your own project.
     #endregion
@@ -110,7 +111,7 @@ public class CharacterMovement : MonoBehaviour
     private void Awake()
     {
         RB = GetComponent<Rigidbody2D>();
-        m_animator = GetComponent<Animator>();
+        _animController = GetComponent<CharacterAnimationController>();
 
         CopyFromSO();
     }
@@ -209,6 +210,11 @@ public class CharacterMovement : MonoBehaviour
         #region COLLISION CHECKS
         //Ground Check
         bool isGrounded = Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer);
+        
+        if (isGrounded && !IsJumping && Mathf.Abs(RB.linearVelocity.y) < 0.1f)
+        {
+            _animController.SetGroundedState();
+        }
 
         if (isGrounded)
         {
@@ -241,6 +247,7 @@ public class CharacterMovement : MonoBehaviour
         if (CanJump() && LastPressedJumpTime > 0)
         {
             IsJumping = true;
+            _animController.Jump();
             _isJumpCut = false;
             _isJumpFalling = false;
             Jump();
@@ -283,6 +290,9 @@ public class CharacterMovement : MonoBehaviour
             SetGravityScale(Data.gravityScale);
         }
         #endregion
+
+        UpdateAnimator();
+
     }
 
     #region GENERAL METHODS
@@ -347,12 +357,13 @@ public class CharacterMovement : MonoBehaviour
         float speedDif = targetSpeed - RB.linearVelocity.x;
         float movement = speedDif * accelRate;
 
-        if (m_animator != null)
+/*        if (_animController)
         {
             float horizontalVelocity = Mathf.Abs(RB.linearVelocity.x);
             bool isWalking = horizontalVelocity > 0.1f && LastOnGroundTime > 0;
-            m_animator.SetBool("IsWalking", isWalking);
-        }
+
+            _animController.OnMovementSateChanged.Invoke(isWalking, false);
+        }*/
 
         //Debug.Log($"Current velocity Y: {RB.linearVelocity.y}, approx lift: {RB.mass * RB.linearVelocity.y}");
 
@@ -455,8 +466,6 @@ public class CharacterMovement : MonoBehaviour
 
         float adjustedForce = force * RB.mass;
 
-        //Debug.Log($"Jump force applied: {adjustedForce} (raw: {force}, mass: {RB.mass})");
-
         RB.AddForce(Vector2.up * adjustedForce, ForceMode2D.Impulse);
         #endregion
     }
@@ -478,5 +487,16 @@ public class CharacterMovement : MonoBehaviour
         return IsJumping && RB.linearVelocity.y > 0;
     }
     #endregion
+
+    private void UpdateAnimator()
+    {
+        float horizontalVelocity = Mathf.Abs(RB.linearVelocity.x);
+        bool isWalking = horizontalVelocity > 0.1f && LastOnGroundTime > 0;
+        bool isJumping = IsJumping;
+        bool isFalling = RB.linearVelocity.y < -0.1f && LastOnGroundTime <= 0;
+        //print(isWalking);
+        _animController.UpdateMovementState(isWalking);
+    }
+
 }
 
