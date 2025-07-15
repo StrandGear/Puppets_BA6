@@ -24,7 +24,8 @@ public class Timer
     {
         if (!isRunning) return;
 
-        elapsed += Time.deltaTime;
+        elapsed += Time.unscaledDeltaTime;
+
         if (elapsed >= duration)
         {
             isRunning = false;

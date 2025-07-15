@@ -6020,7 +6020,7 @@ MonoBehaviour:
   m_moveY: 2
   m_speed: 2
   m_speedReduction: 0.3
-  m_biggerMass: 5.5
+  m_biggerMass: 4
 --- !u!95 &1867143212269702725
 Animator:
   serializedVersion: 7
@@ -6055,6 +6055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65af54fc7b8201446b414cfdb3fd5b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  curtainAnimation: {fileID: 0}
 --- !u!114 &104673436517238178
 MonoBehaviour:
   m_ObjectHideFlags: 0
