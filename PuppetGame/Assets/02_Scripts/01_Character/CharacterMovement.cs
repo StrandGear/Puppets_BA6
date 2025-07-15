@@ -131,7 +131,6 @@ public class CharacterMovement : MonoBehaviour
         SetGravityScale(Data.gravityScale);
 
         IsFacingRight = _isFacingRight;
-
     }
 
     public void CopyFromSO()
@@ -356,14 +355,6 @@ public class CharacterMovement : MonoBehaviour
 
         float speedDif = targetSpeed - RB.linearVelocity.x;
         float movement = speedDif * accelRate;
-
-/*        if (_animController)
-        {
-            float horizontalVelocity = Mathf.Abs(RB.linearVelocity.x);
-            bool isWalking = horizontalVelocity > 0.1f && LastOnGroundTime > 0;
-
-            _animController.OnMovementSateChanged.Invoke(isWalking, false);
-        }*/
 
         //Debug.Log($"Current velocity Y: {RB.linearVelocity.y}, approx lift: {RB.mass * RB.linearVelocity.y}");
 
