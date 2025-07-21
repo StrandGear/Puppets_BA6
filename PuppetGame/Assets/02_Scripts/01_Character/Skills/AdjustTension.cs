@@ -27,6 +27,8 @@ public class AdjustTension : Ability
     float m_initMass;
     [SerializeField] float m_biggerMass = 3.0f;
 
+     InputAction m_waveButton;
+
     public StringPuppetStates currentAbilityState { get; private set; }
 
     protected override void Start()
@@ -40,6 +42,10 @@ public class AdjustTension : Ability
         m_abilityButton = InputSystem.actions.FindAction("Interact");
         m_abilityButton.performed += UseAbility;
         m_abilityButton.canceled += UseAbility;
+
+        m_waveButton = InputSystem.actions.FindAction("Crouch");
+        m_waveButton.performed += Wave;
+        m_waveButton.canceled += Wave;
 
         // starting positions
         m_startPositions = new Vector3[m_ropesAnchors.Count];
@@ -100,6 +106,11 @@ public class AdjustTension : Ability
         ToggleRopeMovement();
 
         GetComponent<CharacterAnimationController>().OnAbilitStateChanged.Invoke();
+    }
+     void Wave (InputAction.CallbackContext obj)
+    {
+        print("Crouching action ");
+        GetComponent<Animator>().SetBool("IsWaving", true);
     }
 
     private void ToggleRopeMovement()
