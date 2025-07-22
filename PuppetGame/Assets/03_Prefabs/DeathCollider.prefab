@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2215646091603723729}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -412,7 +412,7 @@ GameObject:
   - component: {fileID: 2246090777327593871}
   m_Layer: 0
   m_Name: Hole empty_0
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 4604962173736678290}
   m_Layer: 0
   m_Name: Hole empty_1
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
