@@ -289,6 +289,11 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!4 &56840470 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2971485295862229938, guid: f29f7f852315d1f4597c582911e880dd, type: 3}
+  m_PrefabInstance: {fileID: 8514119523640939283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &243983599
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,6 +688,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491166510}
   m_CullTransparentMesh: 1
+--- !u!4 &598225226 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5686736544576396192, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
+  m_PrefabInstance: {fileID: 5430505037090716220}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &609777798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,6 +1417,11 @@ MonoBehaviour:
   segmentCount: 8
   segmentLength: 0.5
   tension: 0.8
+--- !u!4 &1506410108 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1148312048559571022, guid: f29f7f852315d1f4597c582911e880dd, type: 3}
+  m_PrefabInstance: {fileID: 8514119523640939283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1530019089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2469,6 +2484,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 711710368279051014, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
+      propertyPath: m_puzzlesToReset.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 817227502011676576, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
+      propertyPath: m_Points.Array.data[0].x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 817227502011676576, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
+      propertyPath: m_Points.Array.data[1].x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 952141037849901837, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
       propertyPath: m_Name
       value: =====LEVEL=====
@@ -2517,6 +2544,10 @@ PrefabInstance:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3427424789046916198, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
+      propertyPath: m_puzzlesToReset.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3704457173748790395, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2527,6 +2558,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4613496643798650361, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5648252539703758215, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6576403130133484709, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
@@ -2557,6 +2592,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -6.575
       objectReference: {fileID: 0}
+    - target: {fileID: 7356863285811788109, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7734475829514662147, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -2565,9 +2604,21 @@ PrefabInstance:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8143987074840704945, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8610400225874555903, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9166518036698465961, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
+      propertyPath: m_checkPoint
+      value: 
+      objectReference: {fileID: 598225226}
+    - target: {fileID: 9166518036698465961, guid: a19edbf63e76a974f987a8c9f2ba4085, type: 3}
+      propertyPath: m_puzzlesToReset.Array.size
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2856,6 +2907,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: StringCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 1148312048559571022, guid: f29f7f852315d1f4597c582911e880dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400974427886202867, guid: f29f7f852315d1f4597c582911e880dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2971485295862229938, guid: f29f7f852315d1f4597c582911e880dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287720450859778161, guid: f29f7f852315d1f4597c582911e880dd, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 5506509920863830412, guid: f29f7f852315d1f4597c582911e880dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -50.25
@@ -2900,6 +2967,18 @@ PrefabInstance:
       propertyPath: curtainAnimation
       value: 
       objectReference: {fileID: 1250330868}
+    - target: {fileID: 8682936546118948848, guid: f29f7f852315d1f4597c582911e880dd, type: 3}
+      propertyPath: m_tightMovementData
+      value: 
+      objectReference: {fileID: 11400000, guid: 99b9850a8598ae94cb5fea16ac34ed0f, type: 2}
+    - target: {fileID: 8682936546118948848, guid: f29f7f852315d1f4597c582911e880dd, type: 3}
+      propertyPath: 'm_ropesAnchors.Array.data[0]'
+      value: 
+      objectReference: {fileID: 56840470}
+    - target: {fileID: 8682936546118948848, guid: f29f7f852315d1f4597c582911e880dd, type: 3}
+      propertyPath: 'm_ropesAnchors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1506410108}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

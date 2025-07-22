@@ -51,7 +51,7 @@ public abstract class Puzzle : MonoBehaviour
 
         if (currCharacterAbility)
         {
-            Debug.Log("Character exited - moving to INIT");
+            //Debug.Log("Character exited - moving to INIT");
             CharacterExited();
         }
     }
@@ -68,7 +68,7 @@ public abstract class Puzzle : MonoBehaviour
             }
             else
             {
-                Debug.Log("2222 Character does NOT pass requirements - moving DOWN");
+                //Debug.Log("2222 Character does NOT pass requirements - moving DOWN");
                 CharacterEnteredWithoutPassedRequirment();
             }
 

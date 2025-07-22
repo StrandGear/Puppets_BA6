@@ -60,7 +60,7 @@ public class CharacterAnimationController : MonoBehaviour
     }
     public void SetGroundedState()
     {
-        print("Grounded");
+        //print("Grounded");
         m_currentlyJumping = false;
         m_animator.SetBool("IsJumping", false);
     }

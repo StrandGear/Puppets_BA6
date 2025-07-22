@@ -22,12 +22,23 @@ public class AdjustTension : Ability
 
     CharacterMovement m_movement;
 
-    [Range(0.01f, 1)] [SerializeField] float m_speedReduction = 0.3f;
+    public PlayerRunData m_tightMovementData;
+    PlayerRunData m_loseMovementData;
 
-    float m_initMass;
-    [SerializeField] float m_biggerMass = 3.0f;
+    // [Range(0.01f, 1)] [SerializeField] float m_speedReduction = 0.3f;
+
+    // float m_initMass;
+    //  [SerializeField] float m_biggerMass = 3.0f;
+
+    InputAction m_waveButton;
 
     public StringPuppetStates currentAbilityState { get; private set; }
+
+    private void Awake()
+    {
+        m_movement = GetComponent<CharacterMovement>();
+        m_loseMovementData = m_movement.Data;
+    }
 
     protected override void Start()
     {
@@ -41,6 +52,10 @@ public class AdjustTension : Ability
         m_abilityButton.performed += UseAbility;
         m_abilityButton.canceled += UseAbility;
 
+        m_waveButton = InputSystem.actions.FindAction("Crouch");
+        m_waveButton.performed += Wave;
+        m_waveButton.canceled += Wave;
+
         // starting positions
         m_startPositions = new Vector3[m_ropesAnchors.Count];
         for (int i = 0; i < m_ropesAnchors.Count; i++)
@@ -52,9 +67,9 @@ public class AdjustTension : Ability
         m_targetPositions = new Vector3[m_ropesAnchors.Count];
         System.Array.Copy(m_startPositions, m_targetPositions, m_startPositions.Length);
 
-        m_movement = GetComponent<CharacterMovement>();
-        m_initialMaxSpeed = m_movement.Data.runMaxSpeed;
-        m_initMass = GetComponent<Rigidbody2D>().mass;
+        
+        //m_initialMaxSpeed = m_movement.Data.runMaxSpeed;
+        //m_initMass = GetComponent<Rigidbody2D>().mass;
 
         //initil state of the rope is tight so we adjust the speed in the beginning to slower 
         ToggleCharacterMovement();
@@ -101,6 +116,11 @@ public class AdjustTension : Ability
 
         GetComponent<CharacterAnimationController>().OnAbilitStateChanged.Invoke();
     }
+     void Wave (InputAction.CallbackContext obj)
+    {
+        print("Crouching action ");
+        GetComponent<Animator>().SetBool("IsWaving", true);
+    }
 
     private void ToggleRopeMovement()
     {
@@ -124,18 +144,20 @@ public class AdjustTension : Ability
     {
         if (m_isUp)
         {
+            m_movement.Data = m_tightMovementData;
             //high tension -> slower percise movement -> 
             //GetComponent<CharacterMovement>().Data.runMaxSpeed *= m_speedReduction;
             //GetComponent<Rigidbody2D>().gravityScale = 5;
-            GetComponent<Rigidbody2D>().mass = m_biggerMass;
-            currentAbilityState = StringPuppetStates.HighTension;
+            //GetComponent<Rigidbody2D>().mass = m_biggerMass;
+            //currentAbilityState = StringPuppetStates.HighTension;
         }
         else
         {
+            m_movement.Data = m_loseMovementData;
             //GetComponent<CharacterMovement>().Data.runMaxSpeed = m_initialMaxSpeed;
             //GetComponent<Rigidbody2D>().gravityScale = 1;
-            GetComponent<Rigidbody2D>().mass = m_initMass;
-            currentAbilityState = StringPuppetStates.LowTension;
+            //GetComponent<Rigidbody2D>().mass = m_initMass;
+            //currentAbilityState = StringPuppetStates.LowTension;
         }
     }
 }

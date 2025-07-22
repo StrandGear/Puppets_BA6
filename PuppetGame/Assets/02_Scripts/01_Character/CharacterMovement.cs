@@ -104,7 +104,7 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnDisable()
     {
-        ResetSOValuesToInit();
+        //ResetSOValuesToInit();
         InputSystem.actions.FindActionMap("Player").Disable();
     }
 
@@ -113,7 +113,7 @@ public class CharacterMovement : MonoBehaviour
         RB = GetComponent<Rigidbody2D>();
         _animController = GetComponent<CharacterAnimationController>();
 
-        CopyFromSO();
+        //CopyFromSO();
     }
 
     private void Start()
