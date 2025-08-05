@@ -62,7 +62,7 @@ public class CharacterMovement : MonoBehaviour
         [SerializeField] private Transform _backWallCheckPoint;
         [SerializeField] private Vector2 _wallCheckSize = new Vector2(0.5f, 1f);*/
 
-    private int _jumpsLeft;
+    [SerializeField]  private int _jumpsLeft;
 
     #endregion
 
@@ -131,6 +131,8 @@ public class CharacterMovement : MonoBehaviour
         SetGravityScale(Data.gravityScale);
 
         IsFacingRight = _isFacingRight;
+
+        _jumpsLeft = Data.totalJumps;
     }
 
     public void CopyFromSO()
@@ -145,7 +147,7 @@ public class CharacterMovement : MonoBehaviour
         doConserveMomentum = Data.doConserveMomentum;
         jumpHangTimeThreshold = Data.jumpHangTimeThreshold;*/
 
-        c_runMaxSpeed = Data.runMaxSpeed;
+/*        c_runMaxSpeed = Data.runMaxSpeed;
         c_runAccelAmount = Data.runAccelAmount;
         c_runDeccelAmount = Data.runDeccelAmount;
         c_accelInAir = Data.accelInAir;
@@ -153,12 +155,12 @@ public class CharacterMovement : MonoBehaviour
         c_jumpHangAccelerationMult = Data.jumpHangAccelerationMult;
         c_jumpHangMaxSpeedMult = Data.jumpHangMaxSpeedMult;
         c_doConserveMomentum = Data.doConserveMomentum;
-        c_jumpHangTimeThreshold = Data.jumpHangTimeThreshold;
+        c_jumpHangTimeThreshold = Data.jumpHangTimeThreshold;*/
     }
 
     public void ResetSOValuesToInit()
     {
-        Data.runMaxSpeed = c_runMaxSpeed;
+/*        Data.runMaxSpeed = c_runMaxSpeed;
         Data.runAccelAmount = c_runAccelAmount;
         Data.runDeccelAmount = c_runDeccelAmount;
         Data.accelInAir = c_accelInAir;
@@ -166,7 +168,7 @@ public class CharacterMovement : MonoBehaviour
         Data.jumpHangAccelerationMult = c_jumpHangAccelerationMult;
         Data.jumpHangMaxSpeedMult = c_jumpHangMaxSpeedMult;
         Data.doConserveMomentum = c_doConserveMomentum;
-        Data.jumpHangTimeThreshold = c_jumpHangTimeThreshold;
+        Data.jumpHangTimeThreshold = c_jumpHangTimeThreshold;*/
     }
 
     #region INPUT CALLBACKS
@@ -441,11 +443,12 @@ public class CharacterMovement : MonoBehaviour
     #region JUMP METHODS
     private void Jump()
     {
+        _jumpsLeft--;
         //Ensures we can't call Jump multiple times from one press
         LastPressedJumpTime = 0;
         LastOnGroundTime = 0;
 
-        _jumpsLeft--;
+        
 
         #region Perform Jump
         //We increase the force applied if we are falling

@@ -103,6 +103,9 @@ public class SeesawSwingPlatform : Puzzle
     {
         base.Start();
 
+        if (!m_playerRB)
+            m_playerRB = FindFirstObjectByType<CharacterMovement>().GetComponent<Rigidbody2D>();
+
         m_initPlayerGravityValue = m_playerRB.gravityScale;
     }
 

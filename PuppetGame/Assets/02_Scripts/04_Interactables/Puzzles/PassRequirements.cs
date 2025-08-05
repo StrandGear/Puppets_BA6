@@ -23,8 +23,6 @@ public class PassRequirements : MonoBehaviour
                 if (stringAbility != null)
                     result = CheckString(stringAbility.currentAbilityState);
                 break;
-
-                // add more types
         }
 
         if (result)

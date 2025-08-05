@@ -149,7 +149,8 @@ public class AdjustTension : Ability
             //GetComponent<CharacterMovement>().Data.runMaxSpeed *= m_speedReduction;
             //GetComponent<Rigidbody2D>().gravityScale = 5;
             //GetComponent<Rigidbody2D>().mass = m_biggerMass;
-            //currentAbilityState = StringPuppetStates.HighTension;
+            
+            currentAbilityState = StringPuppetStates.HighTension;
         }
         else
         {
@@ -157,7 +158,8 @@ public class AdjustTension : Ability
             //GetComponent<CharacterMovement>().Data.runMaxSpeed = m_initialMaxSpeed;
             //GetComponent<Rigidbody2D>().gravityScale = 1;
             //GetComponent<Rigidbody2D>().mass = m_initMass;
-            //currentAbilityState = StringPuppetStates.LowTension;
+            
+            currentAbilityState = StringPuppetStates.LowTension;
         }
     }
 }

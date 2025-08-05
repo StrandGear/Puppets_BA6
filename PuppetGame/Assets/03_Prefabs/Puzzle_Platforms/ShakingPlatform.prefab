@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stringRequirements:
-    requiredStatesToPass: 01000000
+    requiredStatesToPass: 00000000
     cannotPass: 0
   OnCannotPass:
     m_PersistentCalls:

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PuzzleBlock : MonoBehaviour
 {
-    [SerializeField] Transform m_checkPoint;
-    [SerializeField] List<ResetConfiguration> m_puzzlesToReset = new List<ResetConfiguration>();
+    Transform m_checkPoint;
+   [SerializeField] List<ResetConfiguration> m_puzzlesToReset = new List<ResetConfiguration>();
 
     //private List<GameObject> m_objectsToDuplicate = new List<GameObject>();
 
